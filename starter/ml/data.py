@@ -58,6 +58,9 @@ def process_data(
         Trained LabelBinarizer if training is True, otherwise returns the binarizer
         passed in.
     """
+    print(X.columns)
+    print("dataframe")
+    print(X.head())
 
     if label is not None:
         y = X[label]

@@ -1,5 +1,11 @@
+import pandas as pd
+import numpy as np
+import joblib
+import os
 from sklearn.metrics import fbeta_score, precision_score, recall_score
 from sklearn.linear_model import LogisticRegression
+from ml.data import process_data
+
 
 # Optional: implement hyperparameter tuning.
 def train_model(X_train, y_train):
@@ -64,3 +70,39 @@ def inference(model, X):
     predictions = model.predict(X)
 
     return predictions
+
+
+def load_model(model_path):
+    with open(os.path.join(model_path, "census-lr-model.pkl"), 'rb') as file:
+        model_estimator = joblib.load(file)
+
+    with open(os.path.join(model_path, "census-lr-encoder-model.pkl"), 'rb') as file:
+        model_encoder = joblib.load(file)
+
+    with open(os.path.join(model_path, "census-lr-lb-model.pkl"), 'rb') as file:
+        model_lb = joblib.load(file)
+
+    return model_estimator, model_encoder, model_lb
+
+
+def model_slice_performance(model_load_path, data, X_val, y_val, features, categorical):
+
+    model, encoder, lb = load_model(model_load_path)
+
+    # X_val, y_val, _, _, _ = process_data(
+    #     data, categorical_features=features, label="salary", training=False,
+    #     encoder=encoder, lb=lb, scaler=scaler
+    # )
+
+    y_pred = model.predict(X_val)
+
+    with open('./slice_output.txt', 'w') as file:
+        for the_feature in features:
+            print(f" {the_feature} ")
+            if categorical:
+                for the_category in data[the_feature].unique():
+                    index = data[the_feature] == the_category
+                    accuracy = np.mean(y_pred[index] == y_val[index])
+                    file.write(f"Feature Slice: {the_feature}:{the_category} - {accuracy}\n")
+                file.write("\n-----new slice-----\n")
+
