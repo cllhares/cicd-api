@@ -85,7 +85,7 @@ async def create_item(person_item: Person):
     if int(response) == 1:
         the_result = '>50K'
     else:
-        the_result = '<50K'
+        the_result = '<=50K'
 
     print(f"the response: , {response}, {the_result}")
     return {
