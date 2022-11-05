@@ -89,20 +89,15 @@ def model_slice_performance(model_load_path, data, X_val, y_val, features, categ
 
     model, encoder, lb = load_model(model_load_path)
 
-    # X_val, y_val, _, _, _ = process_data(
-    #     data, categorical_features=features, label="salary", training=False,
-    #     encoder=encoder, lb=lb, scaler=scaler
-    # )
-
     y_pred = model.predict(X_val)
 
     with open('./slice_output.txt', 'w') as file:
         for the_feature in features:
-            print(f" {the_feature} ")
+            file.write(f"---- {the_feature} ----\n")
             if categorical:
                 for the_category in data[the_feature].unique():
                     index = data[the_feature] == the_category
                     accuracy = np.mean(y_pred[index] == y_val[index])
                     file.write(f"Feature Slice: {the_feature}:{the_category} - {accuracy}\n")
-                file.write("\n-----new slice-----\n")
+                file.write("\n\n")
 

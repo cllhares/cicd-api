@@ -31,7 +31,7 @@ cat_features = [
     "relationship",
     "race",
     "sex",
-    "native-country",
+    "native-country"
 ]
 
 # Prepare Train Data

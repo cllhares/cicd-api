@@ -1,117 +1,125 @@
-Feature Slice: workclass:State-gov - 0.7479674796747967
-Feature Slice: workclass:Local-gov - 0.7464454976303317
-Feature Slice: workclass:Private - 0.8131313131313131
-Feature Slice: workclass:? - 0.9011299435028248
-Feature Slice: workclass:Federal-gov - 0.6947368421052632
-Feature Slice: workclass:Self-emp-inc - 0.6378600823045267
-Feature Slice: workclass:Self-emp-not-inc - 0.8047808764940239
+---- workclass ----
+ Feature Slice: workclass:Local-gov - 0.716589861751152
+Feature Slice: workclass:Private - 0.8041804180418042
+Feature Slice: workclass:Self-emp-not-inc - 0.7686274509803922
+Feature Slice: workclass:? - 0.868632707774799
+Feature Slice: workclass:Federal-gov - 0.609375
+Feature Slice: workclass:State-gov - 0.7478991596638656
+Feature Slice: workclass:Self-emp-inc - 0.6055045871559633
 Feature Slice: workclass:Never-worked - 1.0
-Feature Slice: workclass:Without-pay - 1.0
+Feature Slice: workclass:Without-pay - 0.5
 
------new slice-----
-Feature Slice: education:HS-grad - 0.8476599808978033
-Feature Slice: education:Bachelors - 0.694392523364486
-Feature Slice: education:Some-college - 0.8342857142857143
-Feature Slice: education:9th - 0.9310344827586207
-Feature Slice: education:10th - 0.9217877094972067
-Feature Slice: education:7th-8th - 0.9343065693430657
-Feature Slice: education:11th - 0.953125
-Feature Slice: education:12th - 0.9058823529411765
-Feature Slice: education:1st-4th - 0.9722222222222222
-Feature Slice: education:Masters - 0.5637393767705382
-Feature Slice: education:Assoc-acdm - 0.8214285714285714
-Feature Slice: education:Prof-school - 0.5221238938053098
-Feature Slice: education:5th-6th - 0.9032258064516129
-Feature Slice: education:Assoc-voc - 0.7711267605633803
-Feature Slice: education:Doctorate - 0.45555555555555555
-Feature Slice: education:Preschool - 0.9285714285714286
 
------new slice-----
-Feature Slice: marital-status:Never-married - 0.946094106898127
-Feature Slice: marital-status:Married-civ-spouse - 0.641851106639839
-Feature Slice: marital-status:Divorced - 0.9099415204678363
-Feature Slice: marital-status:Widowed - 0.9148936170212766
-Feature Slice: marital-status:Separated - 0.94
-Feature Slice: marital-status:Married-spouse-absent - 0.946236559139785
-Feature Slice: marital-status:Married-AF-spouse - 0.5
+---- education ----
+ Feature Slice: education:Some-college - 0.809322033898305
+Feature Slice: education:HS-grad - 0.8241811175337187
+Feature Slice: education:10th - 0.9375
+Feature Slice: education:Masters - 0.5823529411764706
+Feature Slice: education:Assoc-acdm - 0.7803921568627451
+Feature Slice: education:Bachelors - 0.6804901036757776
+Feature Slice: education:7th-8th - 0.8986486486486487
+Feature Slice: education:Prof-school - 0.5223880597014925
+Feature Slice: education:Assoc-voc - 0.7978723404255319
+Feature Slice: education:9th - 0.9468085106382979
+Feature Slice: education:5th-6th - 0.9444444444444444
+Feature Slice: education:11th - 0.9304347826086956
+Feature Slice: education:12th - 0.9090909090909091
+Feature Slice: education:Doctorate - 0.47058823529411764
+Feature Slice: education:Preschool - 0.8
+Feature Slice: education:1st-4th - 0.9333333333333333
 
------new slice-----
-Feature Slice: occupation:Adm-clerical - 0.8852459016393442
-Feature Slice: occupation:Prof-specialty - 0.653012048192771
-Feature Slice: occupation:? - 0.9014084507042254
+
+---- marital-status ----
+ Feature Slice: marital-status:Divorced - 0.8820960698689956
+Feature Slice: marital-status:Married-civ-spouse - 0.6201266244585139
+Feature Slice: marital-status:Never-married - 0.9475673122342938
+Feature Slice: marital-status:Separated - 0.9238578680203046
+Feature Slice: marital-status:Widowed - 0.890625
+Feature Slice: marital-status:Married-spouse-absent - 0.9411764705882353
+Feature Slice: marital-status:Married-AF-spouse - 0.6
+
+
+---- occupation ----
+ Feature Slice: occupation:Tech-support - 0.7362637362637363
+Feature Slice: occupation:Other-service - 0.9412650602409639
+Feature Slice: occupation:Adm-clerical - 0.8618421052631579
+Feature Slice: occupation:Sales - 0.75
+Feature Slice: occupation:Handlers-cleaners - 0.9225589225589226
+Feature Slice: occupation:Craft-repair - 0.7847642079806529
+Feature Slice: occupation:? - 0.8689839572192514
+Feature Slice: occupation:Prof-specialty - 0.6455399061032864
+Feature Slice: occupation:Machine-op-inspct - 0.8545454545454545
+Feature Slice: occupation:Exec-managerial - 0.6099744245524297
+Feature Slice: occupation:Transport-moving - 0.8200589970501475
+Feature Slice: occupation:Protective-serv - 0.7007874015748031
+Feature Slice: occupation:Farming-fishing - 0.8786407766990292
 Feature Slice: occupation:Priv-house-serv - 1.0
-Feature Slice: occupation:Exec-managerial - 0.6401925391095066
-Feature Slice: occupation:Machine-op-inspct - 0.8819095477386935
-Feature Slice: occupation:Protective-serv - 0.7338129496402878
-Feature Slice: occupation:Transport-moving - 0.8417721518987342
-Feature Slice: occupation:Other-service - 0.940406976744186
-Feature Slice: occupation:Craft-repair - 0.7780548628428927
-Feature Slice: occupation:Sales - 0.7869742198100407
-Feature Slice: occupation:Handlers-cleaners - 0.9384057971014492
-Feature Slice: occupation:Farming-fishing - 0.8854166666666666
-Feature Slice: occupation:Tech-support - 0.7608695652173914
 Feature Slice: occupation:Armed-Forces - 1.0
 
------new slice-----
-Feature Slice: relationship:Own-child - 0.9658291457286432
-Feature Slice: relationship:Husband - 0.642884107210268
-Feature Slice: relationship:Not-in-family - 0.9101258238466148
-Feature Slice: relationship:Other-relative - 0.9402985074626866
-Feature Slice: relationship:Wife - 0.6055363321799307
-Feature Slice: relationship:Unmarried - 0.9394366197183098
 
------new slice-----
-Feature Slice: race:White - 0.7917788547837014
-Feature Slice: race:Black - 0.8770226537216829
-Feature Slice: race:Other - 0.9347826086956522
-Feature Slice: race:Amer-Indian-Eskimo - 0.8695652173913043
-Feature Slice: race:Asian-Pac-Islander - 0.7559808612440191
+---- relationship ----
+ Feature Slice: relationship:Not-in-family - 0.8997067448680351
+Feature Slice: relationship:Husband - 0.6208066339992462
+Feature Slice: relationship:Wife - 0.5761589403973509
+Feature Slice: relationship:Unmarried - 0.9103139013452914
+Feature Slice: relationship:Own-child - 0.9747729566094854
+Feature Slice: relationship:Other-relative - 0.9378238341968912
 
------new slice-----
-Feature Slice: sex:Female - 0.9040590405904059
-Feature Slice: sex:Male - 0.7489067894131185
 
------new slice-----
-Feature Slice: native-country:United-States - 0.7970339713743749
-Feature Slice: native-country:Mexico - 0.9424460431654677
-Feature Slice: native-country:Ecuador - 0.75
-Feature Slice: native-country:South - 0.8
-Feature Slice: native-country:Taiwan - 0.4444444444444444
-Feature Slice: native-country:Japan - 0.9166666666666666
-Feature Slice: native-country:Germany - 0.7272727272727273
-Feature Slice: native-country:China - 0.9166666666666666
-Feature Slice: native-country:Canada - 0.782608695652174
-Feature Slice: native-country:? - 0.801980198019802
-Feature Slice: native-country:Philippines - 0.7954545454545454
-Feature Slice: native-country:Jamaica - 0.9411764705882353
-Feature Slice: native-country:Guatemala - 0.9375
-Feature Slice: native-country:Trinadad&Tobago - 1.0
-Feature Slice: native-country:Hong - 0.8333333333333334
-Feature Slice: native-country:Puerto-Rico - 0.8461538461538461
-Feature Slice: native-country:El-Salvador - 0.9032258064516129
-Feature Slice: native-country:Portugal - 0.8888888888888888
-Feature Slice: native-country:Iran - 0.6923076923076923
-Feature Slice: native-country:Italy - 0.625
-Feature Slice: native-country:England - 0.7368421052631579
-Feature Slice: native-country:Cuba - 0.6
-Feature Slice: native-country:Cambodia - 0.3333333333333333
-Feature Slice: native-country:Vietnam - 0.875
-Feature Slice: native-country:Nicaragua - 1.0
-Feature Slice: native-country:Haiti - 0.75
-Feature Slice: native-country:Dominican-Republic - 1.0
-Feature Slice: native-country:Laos - 0.75
-Feature Slice: native-country:Ireland - 0.8333333333333334
-Feature Slice: native-country:Peru - 0.8571428571428571
-Feature Slice: native-country:Poland - 0.7777777777777778
-Feature Slice: native-country:Honduras - 1.0
-Feature Slice: native-country:Columbia - 0.9230769230769231
-Feature Slice: native-country:Scotland - 0.5
-Feature Slice: native-country:India - 0.7368421052631579
-Feature Slice: native-country:Greece - 0.8
-Feature Slice: native-country:Thailand - 1.0
-Feature Slice: native-country:Outlying-US(Guam-USVI-etc) - 1.0
-Feature Slice: native-country:France - 0.6666666666666666
+---- race ----
+ Feature Slice: race:White - 0.7760659261913293
+Feature Slice: race:Black - 0.8764227642276423
+Feature Slice: race:Amer-Indian-Eskimo - 0.8840579710144928
+Feature Slice: race:Other - 0.8367346938775511
+Feature Slice: race:Asian-Pac-Islander - 0.696969696969697
+
+
+---- sex ----
+ Feature Slice: sex:Female - 0.8820464234959735
+Feature Slice: sex:Male - 0.7380736029077692
+
+
+---- native-country ----
+ Feature Slice: native-country:United-States - 0.7804210166010611
+Feature Slice: native-country:? - 0.8235294117647058
+Feature Slice: native-country:India - 0.6818181818181818
+Feature Slice: native-country:Italy - 0.6666666666666666
+Feature Slice: native-country:Mexico - 0.9465648854961832
+Feature Slice: native-country:England - 0.5714285714285714
+Feature Slice: native-country:Canada - 0.8214285714285714
+Feature Slice: native-country:France - 0.7777777777777778
+Feature Slice: native-country:Philippines - 0.6744186046511628
+Feature Slice: native-country:El-Salvador - 0.9714285714285714
+Feature Slice: native-country:Thailand - 0.75
+Feature Slice: native-country:Haiti - 1.0
+Feature Slice: native-country:Taiwan - 0.5
+Feature Slice: native-country:Ireland - 0.6
 Feature Slice: native-country:Hungary - 1.0
+Feature Slice: native-country:Puerto-Rico - 0.9090909090909091
+Feature Slice: native-country:Cuba - 0.8333333333333334
+Feature Slice: native-country:Holand-Netherlands - 0.0
+Feature Slice: native-country:China - 0.6
+Feature Slice: native-country:Jamaica - 0.875
+Feature Slice: native-country:Germany - 0.7619047619047619
+Feature Slice: native-country:Vietnam - 0.8125
+Feature Slice: native-country:Guatemala - 1.0
+Feature Slice: native-country:Cambodia - 0.5714285714285714
+Feature Slice: native-country:Columbia - 0.9230769230769231
+Feature Slice: native-country:Outlying-US(Guam-USVI-etc) - 1.0
+Feature Slice: native-country:Poland - 0.8333333333333334
+Feature Slice: native-country:Japan - 0.75
+Feature Slice: native-country:South - 0.6875
+Feature Slice: native-country:Portugal - 0.875
+Feature Slice: native-country:Dominican-Republic - 1.0
+Feature Slice: native-country:Nicaragua - 1.0
+Feature Slice: native-country:Trinadad&Tobago - 1.0
+Feature Slice: native-country:Greece - 0.75
+Feature Slice: native-country:Peru - 1.0
+Feature Slice: native-country:Iran - 0.5
+Feature Slice: native-country:Ecuador - 0.8
+Feature Slice: native-country:Hong - 0.3333333333333333
+Feature Slice: native-country:Laos - 1.0
+Feature Slice: native-country:Scotland - 1.0
 Feature Slice: native-country:Yugoslavia - 1.0
 
------new slice-----
+
