@@ -62,8 +62,11 @@ def test_compute_model_metrics():
 
 if __name__ == "__main__":
 
+    # Test Process Data
     test_process_data()
 
+    # Test Inference Data
     test_inference()
 
+    # Test Computer Data
     test_compute_model_metrics()
